@@ -1,0 +1,38 @@
+<html>
+<head>
+<title> Walmart</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css"/>
+ <script src="script.js"></script>
+</head>
+<body>
+<div class="row">
+
+	<div class="column headerCol" style="height:100%" >
+		<img src="Header.jpg" style="width:100%;height:100%"/>
+	</div>
+	
+	<div class="column frmCol" style="flex-grow: 1;height:100%">
+		<form action="home.html" method="post" >
+		  <div class="imgcontainer">
+			<img src="loginImage.jpeg" alt="Avatar" class="avatar">
+		  </div>
+
+		  <div style="padding:16px;">
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+			<button type="submit" onclick="return ValidateLogin()">Login</button>
+			<button type="button" class="cancelbtn">Cancel</button>
+		  </div>
+		</form>
+	</div>
+</div>
+</body>
